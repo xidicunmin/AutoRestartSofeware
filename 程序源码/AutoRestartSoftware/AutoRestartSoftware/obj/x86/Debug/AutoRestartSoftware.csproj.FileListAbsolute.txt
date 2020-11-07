@@ -6,3 +6,14 @@ E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\
 E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.csproj.GenerateResource.Cache
 E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.exe
 E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.pdb
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.exe.config
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.exe
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.pdb
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.exe
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.pdb
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSofeware.Form1.resources
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSofeware.Properties.Resources.resources
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.csproj.GenerateResource.cache
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\HelpTools.dll
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\HelpTools.pdb
+C:\github-pj\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.csprojResolveAssemblyReference.cache

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace AutoRestartSofeware
@@ -15,7 +16,19 @@ namespace AutoRestartSofeware
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            bool isRuned;
+            var mutex = new Mutex(true, "AutoRestartSoftware", out isRuned);
+            if (isRuned)
+            {
+                
+                Application.Run(new Form1());
+                mutex.ReleaseMutex();
+            }
+            else
+            {
+                MessageBox.Show(@"程序已启动!", @"提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
         }
     }
 }
