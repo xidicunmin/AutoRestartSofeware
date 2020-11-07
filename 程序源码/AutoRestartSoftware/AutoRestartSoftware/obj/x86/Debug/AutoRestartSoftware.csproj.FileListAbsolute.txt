@@ -1,0 +1,8 @@
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.exe.config
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.exe
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\bin\Debug\AutoRestartSoftware.pdb
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSofeware.Form1.resources
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSofeware.Properties.Resources.resources
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.csproj.GenerateResource.Cache
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.exe
+E:\AutoRestartSofeware\程序源码\AutoRestartSoftware\AutoRestartSoftware\obj\x86\Debug\AutoRestartSoftware.pdb
