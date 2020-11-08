@@ -45,31 +45,32 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSoftwareName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.chkStart = new System.Windows.Forms.CheckBox();
             this.cmsAutoRestartSoftware.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSoftwarePath
             // 
             this.txtSoftwarePath.Enabled = false;
-            this.txtSoftwarePath.Location = new System.Drawing.Point(84, 22);
+            this.txtSoftwarePath.Location = new System.Drawing.Point(84, 20);
             this.txtSoftwarePath.Name = "txtSoftwarePath";
-            this.txtSoftwarePath.Size = new System.Drawing.Size(216, 20);
+            this.txtSoftwarePath.Size = new System.Drawing.Size(216, 21);
             this.txtSoftwarePath.TabIndex = 0;
             // 
             // lblSofewarePath
             // 
             this.lblSofewarePath.AutoSize = true;
-            this.lblSofewarePath.Location = new System.Drawing.Point(13, 25);
+            this.lblSofewarePath.Location = new System.Drawing.Point(13, 23);
             this.lblSofewarePath.Name = "lblSofewarePath";
-            this.lblSofewarePath.Size = new System.Drawing.Size(67, 13);
+            this.lblSofewarePath.Size = new System.Drawing.Size(65, 12);
             this.lblSofewarePath.TabIndex = 1;
             this.lblSofewarePath.Text = "程序路径：";
             // 
             // btnSelectSoftwarePath
             // 
-            this.btnSelectSoftwarePath.Location = new System.Drawing.Point(306, 20);
+            this.btnSelectSoftwarePath.Location = new System.Drawing.Point(306, 18);
             this.btnSelectSoftwarePath.Name = "btnSelectSoftwarePath";
-            this.btnSelectSoftwarePath.Size = new System.Drawing.Size(75, 25);
+            this.btnSelectSoftwarePath.Size = new System.Drawing.Size(75, 23);
             this.btnSelectSoftwarePath.TabIndex = 2;
             this.btnSelectSoftwarePath.Text = "选择程序";
             this.btnSelectSoftwarePath.UseVisualStyleBackColor = true;
@@ -78,18 +79,18 @@
             // chkStartWithWindows
             // 
             this.chkStartWithWindows.AutoSize = true;
-            this.chkStartWithWindows.Location = new System.Drawing.Point(15, 78);
+            this.chkStartWithWindows.Location = new System.Drawing.Point(15, 72);
             this.chkStartWithWindows.Name = "chkStartWithWindows";
-            this.chkStartWithWindows.Size = new System.Drawing.Size(74, 17);
+            this.chkStartWithWindows.Size = new System.Drawing.Size(72, 16);
             this.chkStartWithWindows.TabIndex = 3;
             this.chkStartWithWindows.Text = "开机启动";
             this.chkStartWithWindows.UseVisualStyleBackColor = true;
             // 
             // btnSaveConfig
             // 
-            this.btnSaveConfig.Location = new System.Drawing.Point(306, 74);
+            this.btnSaveConfig.Location = new System.Drawing.Point(306, 68);
             this.btnSaveConfig.Name = "btnSaveConfig";
-            this.btnSaveConfig.Size = new System.Drawing.Size(75, 25);
+            this.btnSaveConfig.Size = new System.Drawing.Size(75, 23);
             this.btnSaveConfig.TabIndex = 4;
             this.btnSaveConfig.Text = "保存";
             this.btnSaveConfig.UseVisualStyleBackColor = true;
@@ -141,39 +142,54 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 51);
+            this.label1.Location = new System.Drawing.Point(13, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 5;
             this.label1.Text = "进程名称：";
             // 
             // txtSoftwareName
             // 
-            this.txtSoftwareName.Location = new System.Drawing.Point(84, 48);
+            this.txtSoftwareName.Location = new System.Drawing.Point(84, 44);
             this.txtSoftwareName.Name = "txtSoftwareName";
-            this.txtSoftwareName.Size = new System.Drawing.Size(123, 20);
+            this.txtSoftwareName.Size = new System.Drawing.Size(123, 21);
             this.txtSoftwareName.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(213, 51);
+            this.label2.Location = new System.Drawing.Point(213, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 13);
+            this.label2.Size = new System.Drawing.Size(185, 12);
             this.label2.TabIndex = 7;
             this.label2.Text = "（任务管理器查看对应进程名称）";
             // 
+            // chkStart
+            // 
+            this.chkStart.AutoSize = true;
+            this.chkStart.Checked = true;
+            this.chkStart.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkStart.Location = new System.Drawing.Point(93, 72);
+            this.chkStart.Name = "chkStart";
+            this.chkStart.Size = new System.Drawing.Size(72, 16);
+            this.chkStart.TabIndex = 8;
+            this.chkStart.Text = "监控程序";
+            this.chkStart.UseVisualStyleBackColor = true;
+            this.chkStart.CheckedChanged += new System.EventHandler(this.chkStart_CheckedChanged);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 111);
+            this.ClientSize = new System.Drawing.Size(394, 102);
+            this.Controls.Add(this.chkStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSoftwareName);
             this.Controls.Add(this.label1);
@@ -184,9 +200,9 @@
             this.Controls.Add(this.txtSoftwarePath);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(410, 150);
+            this.MaximumSize = new System.Drawing.Size(410, 141);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(410, 150);
+            this.MinimumSize = new System.Drawing.Size(410, 141);
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.Text = "退出自动重启";
@@ -217,6 +233,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSoftwareName;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkStart;
     }
 }
 

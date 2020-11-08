@@ -168,7 +168,16 @@ namespace AutoRestartSofeware
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            CheckRun.CheckAndOpenExe(txtSoftwareName.Text, txtSoftwarePath.Text);
+            bool restartStatus;
+            if (!CheckRun.CheckAndOpenExe(txtSoftwareName.Text, txtSoftwarePath.Text, out restartStatus))
+            {
+                File.AppendAllText(string.Format("{0}\\日志\\{1}.txt", Application.StartupPath, DateTime.Now.ToString("yyyyMMdd")), string.Format("{0} 重启程序{1}\r\n", DateTime.Now.ToString("HH:mm:ss:fff"), restartStatus ? "成功" : "失败"));
+            }
+        }
+
+        private void chkStart_CheckedChanged(object sender, EventArgs e)
+        {
+            timer1.Enabled = chkStart.Checked;
         }
     }
 }

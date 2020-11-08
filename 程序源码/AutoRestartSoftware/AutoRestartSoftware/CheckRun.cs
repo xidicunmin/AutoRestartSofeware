@@ -9,8 +9,9 @@ namespace AutoRestartSofeware
 {
     public class CheckRun
     {
-        public static bool CheckAndOpenExe(string exeName,string exePath)
+        public static bool CheckAndOpenExe(string exeName,string exePath,out bool restartStatus)
         {
+            restartStatus = false;
             Process[] processes = Process.GetProcessesByName(exeName);
             if (processes.Length > 0)
             {
@@ -18,7 +19,8 @@ namespace AutoRestartSofeware
             }
             else
             {
-                return OpenExe(exePath);
+                restartStatus = OpenExe(exePath);
+                return false;
             }
         }
 
